@@ -1,11 +1,11 @@
 steps:
 # Pull the existing image
  - name: 'gcr.io/cloud-builders/docker'
-    entrypoint: 'bash'
-    args:
-     - '-c'
-     - |
-      docker pull gcr.io/$PROJECT_ID/tomcat:latest || exit 0
+   entrypoint: 'bash'
+   args:
+    - '-c'
+    - |
+      docker pull gcr.io/$PROJECT_ID/tomcat:latest 
 
 # build docker images
  - name: 'gcr.io/cloud-builders/docker'
