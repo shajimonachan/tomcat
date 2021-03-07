@@ -5,7 +5,7 @@ steps:
    args:
     - '-c'
     - |
-      docker pull gcr.io/$PROJECT_ID/tomcat:latest 
+      docker pull gcr.io/$PROJECT_ID/tomcat:latest || exit 0
 
 # build docker images
  - name: 'gcr.io/cloud-builders/docker'
